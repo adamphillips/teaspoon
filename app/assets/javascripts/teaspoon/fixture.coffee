@@ -100,7 +100,7 @@ class Teaspoon.Fixture
     throw("Unable to make Ajax Request") unless xhr
 
     xhr.onreadystatechange = callback
-    xhr.open("GET", "#{Teaspoon.root}/fixtures/#{url}", false)
+    xhr.open("GET", "#{Teaspoon.root}/fixtures/#{url}", true)
     xhr.send()
 
 
